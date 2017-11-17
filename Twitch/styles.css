@@ -1,0 +1,9 @@
+body {
+	background: #FFC300 url('https://web.twitchapp.net/newport/cdn/assets/images/common/glitch.svg')  no-repeat fixed center;
+  color: ##581845;
+  text-shadow:  1px 1px #DAF7A6;
+}
+
+#header {
+	font-weight: bold;
+}

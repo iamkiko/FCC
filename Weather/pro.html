@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Barrio|Lobster|Rock+Salt" rel="stylesheet">
+    <link href="pro.css" rel="stylesheet">
+    <script src="pro.js"></script>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv2zKmeuma1xFu9pNYPVIgLwDVnl_e7c8">
+</script>
+    <title>Pro Weather</title>
+
+</head>
+<body>
+
+
+
+
+<div id="sky"></div>
+<div id="skygradient"></div>
+<div id="stars"></div>
+<div id="sun"></div>
+<div id="moon"></div>
+<img src="https://res.cloudinary.com/ackmandesu/image/upload/v1487075511/Weather%20App/mountain2.svg" alt="" id="mtn-right" class="mountain"/>
+<img src="https://res.cloudinary.com/ackmandesu/image/upload/v1487075511/Weather%20App/mountain.svg" alt="" id="mtn-left" class="mountain"/>
+<div id="cloud1" class="clouds"></div>
+<canvas id="rain"></canvas>
+<canvas id="snow"></canvas>
+<div id="cloud2" class="clouds"></div>
+<div id="ground"></div>
+<div id="darkness"></div>
+
+
+<div id="y" class="text-center">
+    <p id="weather"></p>
+    <p id="weatherdesc"></p>
+</div>
+<div id="x">
+    <div class="row">
+        <div class="col-sm-3 text-center"><i class="fa fa-map-marker" aria-hidden="true"></i><p id="country"></p></div>
+        <div class="col-sm-3 text-center"><i class="fa fa-cloud" aria-hidden="true"></i><p id="cloudiness"></p></div>
+        <div class="col-sm-3 text-center"><i class="fa fa-thermometer-half" aria-hidden="true"></i><p id="temperature"></p><sup id="switch" onclick="tempConversion()">&nbsp;(ºF)</sup></div>
+        <div class="col-sm-3 text-center"><p onclick="toggleMap()" style="cursor: pointer;">[Toggle Map]</p></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3 text-center"><i class="fa fa-globe" aria-hidden="true"></i><p id="lonlat"></p></div>
+        <div class="col-sm-3 text-center"><i class="fa fa-tint" aria-hidden="true"></i><p id="humidity"></p></div>
+        <div class="col-sm-3 text-center"><i class="fa fa-align-justify" aria-hidden="true"></i><p id="wind"></p></div>
+        <div  id="go" class="col-sm-3 text-center hidden"><p onclick="getLocalData();toggleMap();" style="cursor: pointer;">[Go!]</p></div>
+    </div>
+</div>
+
+<img id="icon" src="">
+
+<div id="map"></div>
+
+</body>
+</html>
+<!-- <input type="text" id="ass" value=""> -->

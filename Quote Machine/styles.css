@@ -1,0 +1,48 @@
+body {
+  background-color: #333;
+  color: #333;
+ 
+}
+
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+}
+
+.quote-box {
+  border-radius:3px;
+  position:relative;
+  margin:8% auto auto auto;
+  width:450px;
+  padding:40px 50px;
+  display:table;
+  background-color:#fff;
+}
+
+
+ i {
+      font-size:1.0em;
+      margin-right: 0.4em;
+  }
+
+.container {
+	text-align: center;
+	margin: ;
+}
+
+.link {
+		margin-top: 50px;
+}
+
+.inputs {
+	display: inline-block;
+}
+/*#search {
+	margin-top: 50px;
+}*/
